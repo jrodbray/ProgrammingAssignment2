@@ -1,5 +1,8 @@
 ##      this function caches the (potentially) expensive operation of
-## finding the inverse of a matrix
+## finding the inverse of a matrix.  This is accomplished by creating
+## a list of the functions used to set/get the matrix and set/get the
+## solved inverse of that matrix.  These functions will be used by the
+## following function "cacheSolve" to cache and retrieve matrix inverses.
 
 makeCacheMatrix <- function(x = matrix()) {
         i <- NULL
